@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-98DP5VKS42");
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3kh0 | Games, tools, and the loss of braincells.</title>
+        <meta name="keywords" content="front-end web developer, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
+        <meta property="og:title" content="Personal page of 3kh0" />
+        <meta property="og:site_name" content="Front-end Web Developer" />
+        <meta property="og:description" content="Front-end Web Developer - working toward Responsive Web Design, JavaScript frameworks, CSS animation, and precompilers." />
+        <meta name="description" content="Front-end Web Developer - working toward Responsive Web Design, JavaScript frameworks, CSS animation, and precompilers." />
+        <meta name="author" content="3kh0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            .closebtn {
+                margin-left: 15px;
+                color: white;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .closebtn:hover {
+                color: #000000;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                border-radius: 10px;
+                background-color: #2b2b2b;
+                text-align: center;
+                font-family: arial;
+            }
+            a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+            }
+            .header {
+                border: 16px solid DodgerBlue;
+                border-radius: 16px;
+            }
+            .text1 {
+                font-size: 50px;
+            }
+            .line {
+                border-radius: 4px;
+                border: 4px solid DodgerBlue;
+            }
+            .white {
+                color: white;
+            }
+            .black {
+                color: black;
+            }
+            .desc {
+                color: gray;
+                font-size: 16px;
+                padding: 5px;
+            }
+            button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                border-radius: 10px;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                align-content: center;
+            }
+            .flex-container > div {
+                margin: 1px;
+                padding: 3px;
+            }
+            .thumb {
+                border-radius: 10px;
+            }
+            button:hover,
+            a:hover {
+                opacity: 0.7;
+            }
+            .center {
+                margin: auto;
+                width: 60%;
+                border: 0px solid #73ad21;
+                padding: 10px;
+            }
+            .centertxt {
+                text-align: center;
+                border: 0px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="box__row">
+                <div data-cell="1" class="box__row-cell">
+                    <div class="box__row-cell-info"><p class="box__row-cell-info-title">About Me</p></div>
+                    <div class="box__row-cell-info"><div class="box__row-cell-info-sign"></div></div>
+                    <div class="box__row-cell-info--full"><h1 class="box__row-cell-info--full-heading">About Me</h1></div>
+                </div>
+                <div data-cell="2" class="box__row-cell">
+                    <div class="box__row-cell-info"><p class="box__row-cell-info-title">Skills</p></div>
+                    <div class="box__row-cell-info"><div class="box__row-cell-info-sign"></div></div>
+                    <div class="box__row-cell-info--full"><h1 class="box__row-cell-info--full-heading">Skills</h1></div>
+                </div>
+            </div>
+            <div class="box__row">
+                <div data-cell="3" class="box__row-cell">
+                    <div class="box__row-cell-info"><p class="box__row-cell-info-title">Resources</p></div>
+                    <div class="box__row-cell-info"><div class="box__row-cell-info-sign"></div></div>
+                    <div class="box__row-cell-info--full"><h1 class="box__row-cell-info--full-heading">Resources</h1></div>
+                </div>
+                <div data-cell="4" class="box__row-cell">
+                    <div class="box__row-cell-info"><p class="box__row-cell-info-title">Projects</p></div>
+                    <div class="box__row-cell-info"><div class="box__row-cell-info-sign"></div></div>
+                    <div class="box__row-cell-info--full"><h1 class="box__row-cell-info--full-heading">Projects</h1></div>
+                </div>
+            </div>
+            <div data-content="1" class="box__content">
+                <div class="box__content-wrapper">
+                    <div class="box__content-inner">
+                        <div class="box__content-text">
+                            <h2 class="box__content-text-heading">Who the hell is 3kh0?</h2>
+                            <p class="box__content-text-par"></p>
+                            <p class="box__content-text-par">
+                                Wait, people read this? Ok, I guess. I started coding with scratch and, I got into basic HTML by editing documents and displaying them in the browser. I started my Github account not knowing anything about
+                                Git or how anything works. I left the account inactive for nearly 2 years, came back knowing what Git was then got back into my account. I learned how Github Pages works and started publishing my JavaScript
+                                games on there. I also took requests from users on any existing games I should add to the site. My website because an "unblocked games" hub pretty quick, and I was fine with it. The site was mainly for my
+                                school but I wanted to see more stats on the site, so I activated Google Analytics and kept watch on the information. I placed ads on the site looking to make a quick buck but the ads slowed loading times
+                                down to the seconds and it made the site more confusing and less user-friendly. I made the decision to remove all ads from the site lowering the average load time from 18 seconds to sub-second loading. Then
+                                the popularity of the site exploded. It was not just my school, I had people from the UK, China, Germany, Australia, Sweden, and more connecting to my website on weekdays, most people were from Chromebooks, I
+                                connected with some of my users, helping them gain access to blocked stuff and learning how to manipulate loopholes in firewalls. Soon I will place ads on my site due to the fact I really need the money and I
+                                promise that the ads will not be intrusive and I will try to keep page load times as fast as possible! Join my discord for updates on the site and be the first to know when new games come out!
+                            </p>
+                            <p class="box__title-par"></p>
+                            <a href="https://namemc.com/profile/3kh0_.1"> <img alt="minecraft" src="https://img.shields.io/badge/-Minecraft-db1f29?style=?style=flat-social&logo=mojangstudios&logoColor=white" /> </a>
+                            <a href="https://open.spotify.com/user/z3dlpi0cfntezy77ypqi8xass"> <img alt="spotify" src="https://img.shields.io/badge/-Spotify-1DB954?style=?style=flat-social&logo=spotify&logoColor=white" /> </a>
+                            <a href="https://twitch.tv/3kh0_live"> <img alt="twitch" src="https://img.shields.io/badge/-Twitch-6441a5?style=?style=flat-social&logo=twitch&logoColor=white" /> </a>
+                            <a href="https://www.reddit.com/user/3kh0_reddit"> <img alt="reddit" src="https://img.shields.io/badge/-Reddit-FF4500?style=?style=flat-social&logo=reddit&logoColor=white" /> </a>
+                            <a href="https://discord.com/invite/vF8BncMhHU"> <img alt="discord" src="https://img.shields.io/badge/-Discord-7289DA?style=?style=flat-social&logo=discord&logoColor=white" /> </a>
+                            <a href="https://github.com/3kh0"> <img alt="github" src="https://img.shields.io/badge/-Github-333333?style=?style=flat-social&logo=github" /> </a>
+                            <a href="https://twitter.com/3kh0_"> <img alt="twitter" src="https://img.shields.io/badge/-Twitter-1DA1F2?style=?style=flat-social&logo=twitter&logoColor=white" /> </a>
+                            <a href="https://steamcommunity.com/id/3kh0_/"> <img alt="github" src="https://img.shields.io/badge/-Steam-171a21?style=%253Fstyle=flat-social&logo=steam&logoColor=white" /> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-content="2" class="box__content">
+                <div class="box__content-wrapper">
+                    <div class="box__content-inner">
+                        <div class="box__content-text">
+                            <h2 class="box__content-text-heading">Programming languages, development tools & CMS</h2>
+                            <img width="100" height="100" alt="html" src="img/html.png" /> <img width="100" height="100" alt="css" src="img/css.png" /> <img width="100" height="100" alt="js" src="img/js.png" />
+                            <img width="100" height="100" alt="git" src="img/git.png" /> <img width="100" height="100" alt="md" src="img/md.png" /> <img width="100" height="100" alt="c" src="img/c.png" />
+                            <img width="100" height="100" alt="c++" src="img/c++.png" /> <img width="100" height="100" alt="bash" src="img/bash.png" /> <img width="100" height="100" alt="python" src="img/python.png" />
+                            <img width="100" height="100" alt="sass" src="img/sass.png" />
+                            <h2 class="box__content-text-heading">Software and services</h2>
+                            <img width="100" height="100" alt="sublime" src="img/sublime.png" /> <img width="100" height="100" alt="vscode" src="img/vscode.png" /> <img width="100" height="100" alt="docker" src="img/docker.png" />
+                            <img width="100" height="100" alt="duck" src="img/duck.png" /> <img width="100" height="100" alt="github" src="img/github.png" /> <img width="100" height="100" alt="firefox" src="img/firefox.png" />
+                            <h2 class="box__content-text-heading">OS</h2>
+                            <img width="100" height="100" alt="windows" src="img/windows.png" /> <img width="100" height="100" alt="ubuntu" src="img/ubuntu.png" /> <img width="100" height="100" alt="kali" src="img/kali.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-content="3" class="box__content">
+                <div class="box__content-wrapper">
+                    <div class="box__content-inner">
+                        <div class="box__content-text">
+                            <p class="box__content-text-par">If you want to learn coding here are some resources that may help you on your quest!</p>
+                            <h2 class="box__content-text-heading">Education</h2>
+                            <p class="box__content-text-par"></p>
+                            <ul>
+                                <li>Free Code Camp ( Front End Development Certificate)</li>
+                                <li>Codecademy (Web Development course)</li>
+                                <li>HTMLacademy.ru (Basic course of HTML and CSS)</li>
+                                <li>GeekBrains.ru (Web Developer - PHP, JavaScript, Node.js, AngularJS/D3.js, Yii2 framework)</li>
+                                <li>Harvard University (Introduction to Computer Science, CS50)</li>
+                                <li>Coursera.org (HTML, CSS, and Javascript for Web Developers)</li>
+                            </ul>
+                            <h2 class="box__content-text-heading">Workshops and bootcamps</h2>
+                            <p class="box__content-text-par"></p>
+                            <ul>
+                                <li>Brainstation</li>
+                                <li>Bitmaker</li>
+                                <li>freeCodeCamp</li>
+                                <li>HackerYou - Web Development Fundamentals and Advanced</li>
+                                <li>LightHouse Labs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-content="4" class="box__content">
+                <div class="box__content-wrapper">
+                    <div class="box__content-inner">
+                        <div class="box__content-text">
+                            <h2 class="box__content-text-heading">Always in progress...</h2>
+                            <div class="flex-container">
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/1/meta/apple-touch-icon.png" alt="1" />
+                                        <h1 style="color: black;">1</h1>
+                                        <p class="desc">Divide the numbers and get to the 1 tile! This an absurd version of the orginal hit game, 2048! Any 2048 AI would be very confused.</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/website-v2/tree/main/projects/1"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/1/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/2048/2048.png" alt="2048" />
+                                        <h1 style="color: black;">2048</h1>
+                                        <p class="desc">Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one! Try and get to the 2048 tile and you win!</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/2048"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/2048/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/DogeMiner/img/dogeminer_300x300.png" alt="DogeMiner" />
+                                        <h1 style="color: black;">Doge Miner</h1>
+                                        <p class="desc">Play one of the most iconic clicker games in the crypto community. Inspired by Dogecoin! Mine Dogecoin to go the the moon and beyond!</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/DogeMiner"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/DogeMiner/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/chill-radio/img/icon.png" alt="chill-radio" />
+                                        <h1 style="color: black;">Chill Radio</h1>
+                                        <p class="desc">Welcome to Chill Radio, 24/7 music designed for studying/reading/relaxing and everything in between. No ads or anything! Just perfect music!</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/chill-radio"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/chill-radio/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/evil-glitch/evil.png" alt="evil-glitch" />
+                                        <h1 style="color: black;">Evil Glitch</h1>
+                                        <p class="desc">Fight off dangerous computer viruses trying to destroy the internet without being destroyed yourself! The ultimate computer war is about to begin.</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/evil-glitch"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/evil-glitch/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/idle-shark/img/sharkgame.png" alt="idle-shark" />
+                                        <h1 style="color: black;">Idle Shark</h1>
+                                        <p class="desc">Build your aquatic realm! Collect different creatures to work for you and train them to increase their profits and explore other dimensions!</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/idle-shark"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/idle-shark/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/minecraft-classic/pack.png" alt="minecraft-classic" />
+                                        <h1 style="color: black;">Minecraft Classic</h1>
+                                        <p class="desc">Play a old version of minecraft in your browser! You can also send a link to your friends so they can join your game and play with you!</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/minecraft-classic"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/minecraft-classic'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/n-gon/bot.png" alt="n-gon" />
+                                        <h1 style="color: black;">n-gon</h1>
+                                        <p class="desc">A simple 2-d physics rogue-lite platformer shooter. Starts simple and gets really confusing with stuff, play it today! Made with no art skills.</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/n-gon"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/n-gon/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/ninja/logo1.png" alt="ninja" />
+                                        <h1 style="color: black;">Ninja</h1>
+                                        <p class="desc">A simple game inspired by fruit ninja. Smash the cubes and get the best highscore. Play normal mode or relax and play casual mode.</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/ninja"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/ninja/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/ns-shaft/favicon.png" alt="ns-shaft" />
+                                        <h1 style="color: black;">NS-Shaft</h1>
+                                        <p class="desc">NS-Shaft is a Japanese game by NAGI-P Soft. You need to go down as many floors as possible without dying. How low can you go?</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/website-v2/tree/main/projects/ns-shaft"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/ns-shaft'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/polybranch/img/pic1.png" alt="polybranch" />
+                                        <h1 style="color: black;">Polybranch</h1>
+                                        <p class="desc">Play the basic math game does not have math, 2048! Play it online with an auto-mover AI if you do not know where to move next.</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/polybranch"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/polybranch/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/retro-bowl/img/icon.jpg" alt="retro bowl" />
+                                        <h1 style="color: black;">Retro Bowl</h1>
+                                        <p class="desc">Are you ready to manage your dream team into victory? Expand your roster, take care of your duties to keep your team and fans happy.</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/retro-bowl"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/retro-bowl/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/rooftop-snipers/img/thumb.png" alt="rooftop-snipers" />
+                                        <h1 style="color: black;">Rooftop Snipers</h1>
+                                        <p class="desc">Rooftop Snipers is a pixel-style shooting game where you have to shoot famous characters off of the roof. You can play in single or two-player mode!</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/rooftop-snipers"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/rooftop-snipers/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/sand-game/sand.png" alt="sand game" />
+                                        <h1 style="color: black;">Sand game</h1>
+                                        <p class="desc">Experiment with elements and design fountains, missiles, and thingamajig! Play with C4, acid, gunpower, and oil! The possibilities are truly endless.</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/sand-game"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/sand-game/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/slope/slope4.jpeg" alt="slope" />
+                                        <h1 style="color: black;">Slope</h1>
+                                        <p class="desc">This is a simple game, dont touch the red. Thats what you think, until everything gets faster and faster. Will you beat the record of 6969?</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/slope"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/slope/'">Launch Project</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="projects/tunnel-rush/img/tunnel.jpg" alt="tunnel-rush" />
+                                        <h1 style="color: black;">Tunnel Rush</h1>
+                                        <p class="desc">Tunnel Rush is a crazy game that will test your speed and reaction. Use the arrows or a and d to bypass moving obstacles in the tunnel.</p>
+                                        <div style="margin: 24px 0;">
+                                            <a class="black" href="https://github.com/3kh0/website-v2/tree/main/projects/tunnel-rush"><i class="fa fa-github"></i></a>
+                                        </div>
+                                        <button class="white" onclick="window.location.href='projects/tunnel-rush/'">Launch Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--- Old project page design <div class="css_grid_gallery"> <a href="projects/sand-game" target="_blank"><img width="200" src="projects/sand-game/sand-game.PNG"/></a> <a href="projects/rooftop-snipers/" target="_blank"><img width="200" src="projects/rooftop-snipers/img/preview.png"/></a> <a href="projects/ninja/" target="_blank"><img width="200" src="projects/ninja/logo1.png"/></a> <a href="projects/2048/" target="_blank"><img width="200" src="projects/2048/2048.png"/></a> <a href="projects/chill-radio/" target="_blank"><img width="200" src="projects/chill-radio/img/icon.png"/></a> <a href="projects/evil-glitch/" target="_blank"><img width="200" src="projects/evil-glitch/evil.png"/></a> <a href="projects/n-gon/" target="_blank"><img width="200" src="projects/n-gon/img/n-gonbot.png"/></a> </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box__close"></div>
+            <div class="box__title">
+                <h1 class="box__title-heading">
+                    3kh0 aka<br />
+                    <span id="name">Echo</span>
+                </h1>
+                <h3>Web Developer</h3>
+                <div class="wrapper-img"><img src="images/double.png" alt="" /> <img class="img-hide" src="images/double2.png" alt="" /></div>
+            </div>
+            <div class="copyright">
+                <p>Made with <i class="fa-solid fa-code"></i> by 3kh0 © 2022</p>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/particles.js"></script>
+    </body>
+</html>

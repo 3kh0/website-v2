@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-98DP5VKS42");
+        </script>
+        <link rel="stylesheet" href="css/style.css" />
+        <title>404 Error | 3kh0</title>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div class="container">
+            <h1>404 Error</h1>
+            <p>
+                The requested URL or file was not found on this server. <br />
+                That is all we know.
+            </p>
+            <h2>Stats for nerds</h2>
+            Requested URL: <code id="full"></code><br />
+            Requested file path: <code id="path"></code><br />
+            Error code: <code id="error"></code><br />
+            Host name: <code id="host"></code><br />
+            Protocol used: <code id="proto"></code><br />
+            <script>
+                document.getElementById("full").innerHTML = window.location.href;
+                document.getElementById("path").innerHTML = window.location.pathname;
+                document.getElementById("error").innerHTML = "404";
+                document.getElementById("host").innerHTML = window.location.hostname;
+                document.getElementById("proto").innerHTML = window.location.protocol;
+            </script>
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/particles.js"></script>
+        </div>
+    </body>
+</html>
